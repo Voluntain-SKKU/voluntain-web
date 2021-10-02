@@ -60,8 +60,8 @@ export default function LecturePage({ course, titles }) {
    * @see https://developers.google.com/youtube/player_parameters
    */
   const opts = {
-    height: size.height > 650 ? '600' : size.height - 50,
-    width: size.width > 1050 ? '900' : size.width - 250,
+    height: size.height > 650 ? '600' : size.height-150,
+    width: size.width > 1050 ? '900' : size.width-10,
     playerVars: {
       // To check other variables, check:
       // https://developers.google.com/youtube/player_parameters

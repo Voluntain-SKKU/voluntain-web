@@ -6,6 +6,8 @@
 .container {
   font-family: 'Noto Sans', sans-serif;
   --hex-parent-height: 100%;
+  width:100%;
+  overflow-x: hidden;
 }
 
 .titlefont {
@@ -13,7 +15,6 @@
 }
 
 .navwrapper{
-  display: flex;
   background-color: #fafafa;
 }
 
@@ -27,13 +28,14 @@
 .navcontainer{
   padding: 0;
   margin: .1rem;
-  max-width:100%;
+  width:100%;
 }
 
 .maintitle {
+  flex-wrap: wrap;
   margin: 0;
   line-height: 1.15;
-  font-size: 5rem;
+  font-size: 8vw;
   text-align: center;
   /* font-family: 'Black Han Sans', sans-serif; */
   font-family: 'Ubuntu', sans-serif;
@@ -42,7 +44,7 @@
 
 .slogan {
   line-height: 3;
-  font-size: 2rem;
+  font-size: 3vw;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -56,24 +58,29 @@
 }
 
 .content {
-  width: 70%;
+  overflow-x:hidden;
+  width: 100%;
   align-items: center;
+  padding-left: 30px;
+  padding-right:30px;
   margin-bottom: 3rem;
   margin-top: 2rem;
 }
 /* Main course card*/
 .maincard {
   flex-direction: row;
-  width: 430px;
+  width: 100%;
   margin: .3rem;
 }
 .maincard .title{
-  font-size: 2rem;
+  font-size: 2vh;
+  font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
 }
 .maincard .text{
   height: 70px;
+  font-size: 1.5vh;
   padding-top: .2rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -109,7 +116,7 @@
   background-color: #003458; /* #0c4890 #00498c*/
   color: white;
   width: 100%;
-  height: 350px;
+  height: 30%;
   font-family: 'Exo 2', sans-serif;
 }
 
@@ -229,9 +236,9 @@
 }
 
 .cardimg {
-  width: 10rem;
-  height: fit-content;
-  margin: .5rem;
+  width: 10vh;
+  height: 10vh;
+  margin: 4vh 0.5vh 4vh 0.5vh;
 }
 
 .logo {
@@ -274,7 +281,7 @@
 
 .lectureSidebar {
   height: calc(100% * var(--hex-parent-height));;
-  width: 250px;
+  width: 30vh;
   background-color: #003458;
   color: #ffffff;
 }
@@ -293,7 +300,7 @@
 }
 
 .lectureCardContainer {
-  margin: 20px;
+  margin: 1vh 1vh 1vh 1vh;
 }
 
 .lectureCardsRow {
@@ -307,7 +314,7 @@
   background: #ffffff;
   position: relative;
   flex: 1;
-  max-width: 60%;
+  
   height: max-content;
   margin: 10px;
   border-radius: 5px;
@@ -350,13 +357,13 @@
 }
 
 .about {
-  padding-left: 30px;
-  padding-right:30px;
+  padding-left: 15px;
+  padding-right:15px;
   padding-top:15px;
   padding-bottom:15px;
-  margin: 80px;
-  width: 100%;
+  margin: 5vh 2vh 5vh 2vh;
   align-items: center;
+  justify-items: center;
   max-width: 90%;
 }
 

@@ -134,8 +134,6 @@ export default function Setting( { titles } ) {
             <main>
                 <div>
                     <Paper className={styles.about}>
-                        <Grid container spacing={2}>
-                        <Grid item xs={6} sm container>
                             <CookieSwitcher />
                             <Dialog open={openDialog} onClose={handleCloseDialog}>
                                 <DialogTitle>{"Disable cookies?"}</DialogTitle>
@@ -149,11 +147,9 @@ export default function Setting( { titles } ) {
                                     <Button onClick={handleNoCookieChange}>YES</Button>
                                 </DialogActions>
                             </Dialog>
-                        </Grid>
-                        <Grid item xs={6} sm container>
-                            <AnalyticsSwitcher />
-                        </Grid>
-                        </Grid>
+                    </Paper>
+                    <Paper className={styles.about}>
+                        <AnalyticsSwitcher />
                     </Paper>
                     <Paper className={styles.about}>
                         <Grid item xs={12} sm container>
