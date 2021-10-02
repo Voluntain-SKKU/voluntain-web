@@ -281,7 +281,7 @@
 
 .lectureSidebar {
   height: calc(100% * var(--hex-parent-height));;
-  width: 30vh;
+  width: 250px;
   background-color: #003458;
   color: #ffffff;
 }
@@ -364,7 +364,7 @@
   margin: 5vh 2vh 5vh 2vh;
   align-items: center;
   justify-items: center;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .aboutimg {
